@@ -12,8 +12,6 @@ export class B extends A {
 }
 
 export class C extends B {
-  declare domNode: HTMLElement
-
   log() {
     console.log('C', this.domNode)
   }
