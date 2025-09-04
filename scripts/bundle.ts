@@ -42,28 +42,7 @@ export async function buildTS({
         inputOptions: {
           plugins: [
             ...options.plugins || [],
-            // ...isDev
-            //   ? []
-            //   : [
-            //       // use `plugin-typescript` make babel work
-                  typescript({ tsconfig: './tsconfig.json', exclude: ['src/__tests__/**/*'] }),
-            //       babel({
-            //         babelHelpers: 'bundled',
-            //         presets: [
-            //           [
-            //             '@babel/preset-env',
-            //             {
-            //               targets: {
-            //                 browsers: ['> 0.25%', 'last 2 versions'],
-            //               },
-            //               modules: false,
-            //             },
-            //           ],
-            //         ],
-            //         exclude: 'node_modules/**',
-            //         extensions: ['.js', '.ts'],
-            //       }),
-            //     ],
+            // typescript({ tsconfig: './tsconfig.json', exclude: ['src/__tests__/**/*'] }),
           ],
         },
         outputOptions: {
